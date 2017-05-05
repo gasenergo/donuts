@@ -1,0 +1,135 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	section.donut
+  	.text
+  		p
+  			width: 100%
+  	.pict
+  		img
+  			height: 70%
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+  section.donut
+    .text
+      height: 200px
+      display: block
+    .pict
+      display: none
+
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+  header
+    height: 200px
+    .address
+      display: none
+    .socButtons
+      display: none
+section.choose
+	.description
+		width: 90%
+	.text
+		height: 250px
+		p
+			width: auto
+	.pict
+		height: 250px
+		img
+			height: 100%
+section.place
+	.text
+		height: auto
+		p
+			width: 90%
+	.pict
+		img
+			height: 80%
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	header
+		height: 150px
+	section.slider
+		display: none
+	section.choose
+		.icons
+			img
+				height: 90%
+		
+	section.donut
+		margin: 0 auto
+		.text
+			text-align: justify
+			span
+				font-size: 30px
+		.bottom
+			display: none
+	footer
+		.map
+			margin: 10px auto
+		.text
+			height: 200px
+			span
+				font-size: 30px
+		form
+			height: 300px
+		.footer-bottom
+			background-color: $main
+			height: 160px
+			.footer-logo
+				display: none
+			.footer-addr
+				height: 160px
+				align-items: center
+	section.place
+		.text
+			span
+				font-size: 30px
+
+	section.choose
+		.text
+			span
+				font-size: 30px
+
+
+
+
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+  /**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/

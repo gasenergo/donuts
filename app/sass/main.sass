@@ -1,0 +1,357 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+	color: $main
+
+.img-responsive
+	display: block
+	width: 100%
+	height: auto
+
+
+//Header styles START//
+
+header
+	height: 235px
+	.address
+		p
+			font-family: raleway
+			height: 100px
+			width: 150px
+			margin: auto
+			margin-top: 55px
+
+	.logo
+		position: relative
+		height: 100px
+		width: 300px
+		margin: auto
+		p
+			font-family: drina
+			font-size: 54px
+			margin-top: 35px
+			span
+				position: absolute
+				bottom: 0
+				font-family: $default-font
+				font-size: 18px
+				text-transform: uppercase
+				letter-spacing: 14px
+	.socButtons
+		text-align: center
+		margin-top: 95px
+		.socButton
+			height: 30px
+			width: 30px
+			background-color: $main
+			display: inline-block
+			margin: 20px 5px
+			border-radius: 5px
+			text-align: center
+			line-height: 30px
+			font-size: 22px
+			a
+				color: #fff
+				&:hover,
+				&:focus
+					color: $dark
+//Header styles END//
+
+//Slider section styles START//
+section.slider
+	position: relative
+
+	img
+		width: 100%
+		z-index: 1
+	.question
+		position: absolute
+		bottom: 20px
+		right: 50px
+		font-family: drina
+		font-size: 40px
+		color: $dark
+	.slick-prev::before
+		width: 80px
+		height: 80px
+		content: "\f053"
+		font-family: 'FontAwesome'
+		font-size: 40px
+		color: white
+		padding: 20px
+	.slick-next
+		right: 45px
+	.slick-next:before
+		content: "\f054"
+		font-family: 'FontAwesome'
+		font-size: 40px
+		color: white
+		padding: 20px
+//Slider section styles END//
+
+//Second section styles START//
+section.donut
+	margin: 20px auto
+	.text
+		height: 600px
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		p
+			font-family: $default-font
+			font-size: 16px
+			width: 80%
+		span
+			font-family: drina
+			font-size: 40px
+			margin: 10px
+	.pict
+		height: 600px
+		display: flex
+		align-items: center
+		justify-content: flex-start
+		img
+			width: auto
+			height: 80%
+	.bottom
+		img
+			width: 100%
+			height: auto
+
+//Second section styles END//
+
+//Third section styles START//
+section.choose
+	margin: 20px auto
+	.icons
+		height: 100px
+		width: 350px
+		margin: 20px auto
+		text-align: center
+	.description
+		height: 200px
+		text-align: center
+		margin: 20px auto
+		width: 60%
+		p
+			font-family: $default-font
+			font-size: 16px
+
+		span
+			font-family: drina
+			font-size: 40px
+			margin: 10px
+	.text
+		height: 350px
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-direction: column
+
+		p
+			font-family: $default-font
+			font-size: 16px
+			width: 90%
+			text-align: center
+		span
+			font-family: drina
+			font-size: 40px
+			margin: 10px
+	.pict
+		height: 350px
+		display: flex
+		align-items: center
+		justify-content: center
+		img
+			width: auto
+			height: 100%
+	.download
+		width: 150px
+		height: 50px
+		border: 2px solid $dark
+		font-family: drina
+		font-size: 35px
+		text-align: center
+		line-height: 50px
+		background-color: $main
+		color: white
+		border-radius: 5px
+		a
+			color: white
+			&:hover,
+			&:focus
+				color: $dark
+				text-decoration: none
+//Third section styles end//
+
+//last section styles START//
+section.place
+	margin: 20px auto
+	.top
+		width: 100%
+		height: auto
+		margin-bottom: 50px
+	.text
+		height: 350px
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-direction: column
+		p
+			font-family: $default-font
+			font-size: 16px
+			width: 90%
+			text-align: justify
+		span
+			font-family: drina
+			font-size: 40px
+			margin: 10px
+	.pict
+		height: 350px
+		display: flex
+		align-items: center
+		justify-content: center
+		img
+			width: auto
+			height: 100%
+//Last section styles end//
+
+//Footer styles START//
+footer
+	.map
+		margin: 20px auto
+		border-top: solid 3px $main
+		border-bottom: solid 3px $main
+		opacity: 0.7
+		transition: opacity .5s ease
+		&:hover
+			opacity: 1
+	.text
+		height: 350px
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-direction: column
+		span
+			font-family: drina
+			font-size: 40px
+			margin: 10px
+	form
+		height: 350px
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-direction: column
+		label
+			width: 200px
+			input, textarea,
+				border: 2px solid $main
+				border-radius: 5px
+				width: 200px
+				resize: none
+			input:focus, textarea:focus
+				outline: none
+
+		button
+			width: 200px
+			height: 40px
+			border: 2px solid $dark
+			font-family: drina
+			font-size: 35px
+			text-align: center
+			line-height: 40px
+			background-color: $main
+			color: white
+			border-radius: 5px
+			margin-top: 20px
+	.footer-bottom
+		background-color: $main
+		height: 235px
+		.footer-logo
+			height: 235px
+			position: relative
+			color: white
+			display: flex
+			align-items: center
+			justify-content: flex-start
+
+			p
+				font-family: drina
+				font-size: 54px
+				margin-top: 35px
+			span
+				position: absolute
+				bottom: 60px
+				left: 20px
+				font-family: $default-font
+				font-size: 18px
+				text-transform: uppercase
+				letter-spacing: 14px
+		.footer-addr
+			height: 235px
+			display: flex
+			align-items: flex-end
+			justify-content: center
+			flex-direction: column
+			p
+				color: white
+			.socButtons
+				text-align: center
+				.socButton
+					height: 30px
+					width: 30px
+					background-color: white
+					display: inline-block
+					margin: 15px 5px
+					border-radius: 5px
+					text-align: center
+					line-height: 30px
+					font-size: 22px
+					a
+						color: $main
+						&:hover,
+						&:focus
+							color: $dark
+
+
+
+
+#lemon
+	font-family: drina
+	font-size: 20px
+@import "media" // Всегда в конце
